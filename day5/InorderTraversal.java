@@ -1,18 +1,19 @@
 package day5;
 import java.util.Scanner;
 
-public class InorderTraversal {
-    class Node {
-        Node left;
-        Node right;
-        int data;
+class Node {
+    Node left;
+    Node right;
+    int data;
 
-        Node(int data) {
-            this.data = data;
-            left = null;
-            right = null;
-        }
+    Node(int data) {
+        this.data = data;
+        left = null;
+        right = null;
     }
+}
+
+public class InorderTraversal {
 
     public static void inOrder(Node root) {
         if(root == null) return;
